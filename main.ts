@@ -1,11 +1,13 @@
 import promptSync from "prompt-sync";
 
-function main() {
+(function main() {
   const scanner = promptSync();
-  let x = scanner("Digite um número: ");
+  let s = scanner("Digite um número: ");
 
-  console.log(factorial(parseInt(x)));
-}()
+  let number = parseInt(s);
+
+  console.log(factorial(number));
+})();
 
 function factorial(n: number) {
   let result = 1;
@@ -16,5 +18,3 @@ function factorial(n: number) {
 
   return result;
 }
-
-main();
