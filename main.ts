@@ -1,4 +1,5 @@
 import promptSync from "prompt-sync";
+import { factorial } from "./factorial"
 
 (function main() {
   const scanner = promptSync();
@@ -9,12 +10,3 @@ import promptSync from "prompt-sync";
   console.log(factorial(number));
 })();
 
-function factorial(n: number) {
-  let result = 1;
-
-  for (let i = 2; i <= n; i++) {
-    result *= i;
-  }
-
-  return result;
-}
