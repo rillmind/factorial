@@ -6,7 +6,7 @@ describe("factorial", () => {
     expect(factorial(0)).toBe(1);
   });
 
-  it("factorial(1) deve retornar 1", () => {
+  it("factorial(6) deve retornar 720", () => {
     expect(factorial(6)).toBe(720);
   });
 
